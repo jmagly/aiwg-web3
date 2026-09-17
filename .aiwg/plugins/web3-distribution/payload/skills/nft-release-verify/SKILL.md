@@ -14,11 +14,15 @@ commandHint:
 
 Run after each candidate update and before reporting a release ready.
 
-1. Locate this deployed skill directory and run:
+1. Locate the package payload and run:
 
    ```bash
-   python3 scripts/release_ledger.py validate <release-ledger.json>
+   python3 skills/nft-release-verify/scripts/release_ledger.py validate <release-ledger.json>
    ```
+
+   In a Git-native installation, `.aiwg/packages.yaml` records the package
+   `cachePath`; use that payload root. A provider deployment may copy only the
+   skill definition, while the immutable package source retains its scripts.
 
 2. Rehash every recorded local source and compare it to the ledger when the
    source remains available. Resolve immutable remote references rather than
@@ -43,4 +47,3 @@ Run after each candidate update and before reporting a release ready.
 The validator intentionally does not connect to wallets, RPC services, or
 pinning providers. Acquisition belongs to project adapters; this skill checks
 the normalized evidence contract.
-
