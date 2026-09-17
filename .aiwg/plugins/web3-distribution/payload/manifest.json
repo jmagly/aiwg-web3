@@ -1,0 +1,25 @@
+{
+  "id": "web3",
+  "type": "framework",
+  "name": "web3",
+  "version": "2026.9.16",
+  "description": "Web3 application and operations lifecycle: scope, design, build, verify, release, operate",
+  "manifestVersion": "1",
+  "platforms": {
+    "claude": "full",
+    "codex": "full"
+  },
+  "keywords": [
+    "web3",
+    "evm",
+    "governance",
+    "framework"
+  ],
+  "frameworkConfig": {
+    "path": "src/"
+  },
+  "license": "UNLICENSED",
+  "deployment": {
+    "pathTemplate": ".{platform}/skills/{id}.md"
+  }
+}

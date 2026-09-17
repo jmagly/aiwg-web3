@@ -1,0 +1,12 @@
+{
+  "name": "aiwg-web3",
+  "version": "2026.9.16",
+  "private": true,
+  "description": "Opt-in AIWG Web3 framework scaffold",
+  "license": "UNLICENSED",
+  "scripts": {
+    "validate": "python3 scripts/validate.py",
+    "package:check": "aiwg package-plugin web3-distribution --dry-run",
+    "package": "aiwg package-plugin web3-distribution --provider all --output dist/plugins"
+  }
+}

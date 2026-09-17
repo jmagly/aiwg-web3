@@ -1,0 +1,9 @@
+dist/
+.aiwg/.index/
+.aiwg/generated/
+.aiwg/activity.log
+.aiwg/marketplace/
+.aiwg/receipts/
+.aiwg/traces/
+.aiwg/quickref*
+node_modules/

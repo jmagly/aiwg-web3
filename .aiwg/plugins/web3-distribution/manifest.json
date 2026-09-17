@@ -1,0 +1,26 @@
+{
+  "id": "web3-distribution",
+  "type": "plugin",
+  "name": "web3-distribution",
+  "version": "2026.9.16",
+  "description": "On-demand delivery wrapper for the Web3 framework",
+  "manifestVersion": "1",
+  "platforms": {
+    "claude": "full",
+    "codex": "full"
+  },
+  "keywords": [
+    "web3",
+    "evm",
+    "governance",
+    "framework"
+  ],
+  "pluginConfig": {
+    "payloadType": "framework",
+    "payloadPath": "payload/"
+  },
+  "license": "UNLICENSED",
+  "deployment": {
+    "pathTemplate": ".{platform}/skills/{id}.md"
+  }
+}
