@@ -16,6 +16,13 @@ skills and both agents deploy, then run the validator against the independent
 fixture. Installation alone does not authorize live actions described by the
 skills.
 
+The completed port was installed from GitHub into a clean Claude consumer and
+from Gitea over SSH into a clean Codex consumer at commit
+`be3d1c037e881d8c64cbaa866639f31aac171c1d`. Both installations deployed two
+agents and seven skills, passed offline integrity verification, and produced
+the same validator result. Two package builds were byte-identical. See
+`nft-release-port-verification.json` for locks, hashes, and fixture results.
+
 ## Verified development scaffold
 
 AIWG 2026.9.12 installed commit `a2a7eb838cb1f2e75c4009acf0ba6a4c2abc2503` from GitHub into a disposable Claude consumer and from Gitea into a disposable Codex consumer. Both deployed the coordinator and intake skill and passed offline marketplace verification with integrity-only status. See install-verification.json and packaging-verification.json.

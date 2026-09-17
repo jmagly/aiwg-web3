@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "aiwg.web3/nft-release-port-verification/v1",
+  "verifiedAt": "2026-09-17T01:55:11Z",
+  "sourceCommit": "be3d1c037e881d8c64cbaa866639f31aac171c1d",
+  "aiwgVersion": "2026.9.12",
+  "sourceDiscovery": {
+    "projectIndexBuild": "passed",
+    "discover": "nft-release-verify resolved",
+    "showSkill": "nft-release-verify resolved",
+    "showAgent": "nft-release-steward resolved"
+  },
+  "consumers": [
+    {
+      "remote": "https://github.com/jmagly/aiwg-web3.git",
+      "provider": "claude",
+      "package": "third-party/web3-distribution",
+      "verification": "integrity-only",
+      "lock": "sha256:cbc7e6553bbd5ac0529c63aea2b01a07a1750a9b1180fcfb79fe7586a467bc13",
+      "agents": 2,
+      "skills": 7,
+      "validatorResult": "passed"
+    },
+    {
+      "remote": "git@git.integrolabs.net:roctinam/aiwg-web3.git",
+      "provider": "codex",
+      "package": "third-party/web3-distribution",
+      "verification": "integrity-only",
+      "lock": "sha256:a8723dd70fa2aa6348c8fb6b6f57f06bdcd8279977e0c57ddca6330b5f2ae6ce",
+      "agents": 2,
+      "skills": 7,
+      "validatorResult": "passed"
+    }
+  ],
+  "fixture": {
+    "path": "tests/fixtures/independent-nft-project/release-ledger.interrupted.json",
+    "releaseId": "independent-community-art-release",
+    "canonicalSha256": "8c12d8150d22751d696583f8ef1e4b6856ab449c524ad538ae5acb2b85143231",
+    "productionReady": false,
+    "summary": {
+      "passed": 6,
+      "blocked": 1,
+      "unverified": 1
+    }
+  },
+  "archives": {
+    "repeatedBuildsByteIdentical": true,
+    "claudeSha256": "abf6e98aad2bed665b41bb2e59004452f88dd59bf97f7e2336388fe8c781cd41",
+    "codexSha256": "32a45ff38e97135267f3853cf6d57cea4bc7dd8b363f7706ee22c56a015f58d8"
+  }
+}
