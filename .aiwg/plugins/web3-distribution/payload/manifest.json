@@ -15,9 +15,7 @@
     "governance",
     "framework"
   ],
-  "frameworkConfig": {
-    "path": "src/"
-  },
+  "frameworkConfig": {},
   "license": "UNLICENSED",
   "deployment": {
     "pathTemplate": ".{platform}/skills/{id}.md"

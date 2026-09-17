@@ -1,0 +1,17 @@
+{
+  "aiwg_version": "2026.9.12",
+  "results": [
+    {
+      "archive": "web3-distribution-2026.9.16-claude.tar.gz",
+      "sha256": "5be48779138611c362915c2ca4e18308d9f33bb48c5e4081a0ea9c6a5ff454e9",
+      "reproducible": true,
+      "payload_bytes_match": true
+    },
+    {
+      "archive": "web3-distribution-2026.9.16-codex.tar.gz",
+      "sha256": "dcb585d6f18e29003b691e0c606ac22b557e603b4d4b729907f57400b7e6c888",
+      "reproducible": true,
+      "payload_bytes_match": true
+    }
+  ]
+}

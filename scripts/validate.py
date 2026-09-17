@@ -12,7 +12,6 @@ assert w["pluginConfig"]["payloadType"] == p["type"]
 assert w["version"] == p["version"]
 for provider in ("claude", "codex"):
     assert provider in w["platforms"] and provider in p["platforms"]
-payload = payload / p["frameworkConfig"]["path"]
 for phase in ("scope", "design", "build", "verify", "release", "operate"):
     assert (payload / "flows" / (phase + ".md")).is_file()
 assert list((payload / "agents").glob("*.md"))

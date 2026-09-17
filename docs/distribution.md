@@ -2,7 +2,7 @@
 
 Follow AIWG's standalone plugin repository and Git-native package exchange documentation linked in references.md.
 
-The wrapper at .aiwg/plugins/web3-distribution/manifest.json points to payload/ with payloadType framework. The nested payload manifest uses frameworkConfig.path = "src/". Both versions must match.
+The wrapper at .aiwg/plugins/web3-distribution/manifest.json points to payload/ with payloadType framework. The nested payload manifest uses an empty frameworkConfig and root-level artifact directories. Both versions must match.
 
 Development installs pin a reviewed commit, use --package web3-distribution and choose --project-local plus an explicit provider. Start in a disposable Git repository. Inspect the resulting package identity and lock before running marketplace verify; do not assume an owner/name coordinate across different hosts.
 
