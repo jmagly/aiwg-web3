@@ -1,0 +1,13 @@
+{
+  "apiVersion": "aiwg.web3/nft-publication-evidence/v1",
+  "releaseId": "replace-me",
+  "contentIdentifier": "replace-me",
+  "manifestSha256": "replace-with-64-lowercase-hex",
+  "persistenceObservations": [],
+  "retrievalObservations": [],
+  "independencePolicy": {
+    "minimumOperators": 2,
+    "minimumBackends": 2
+  }
+}
+

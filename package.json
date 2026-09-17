@@ -5,7 +5,8 @@
   "description": "Opt-in AIWG Web3 framework scaffold",
   "license": "UNLICENSED",
   "scripts": {
-    "validate": "python3 scripts/validate.py",
+    "validate": "python3 scripts/validate.py && python3 tests/test_nft_release.py",
+    "test:nft-release": "python3 tests/test_nft_release.py",
     "package:check": "aiwg package-plugin web3-distribution --dry-run",
     "package": "aiwg package-plugin web3-distribution --provider all --output dist/plugins"
   }

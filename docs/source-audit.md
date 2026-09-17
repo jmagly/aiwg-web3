@@ -33,6 +33,25 @@ Extract EVM integration and independent real-time 3D capability. Rewrite securit
 
 - `roko-holder-claims`: `.aiwg/addons/holder-chain-context/skills/holder-chain-context-skill/SKILL.md` and `.aiwg/addons/holder-market-context/skills/holder-market-context-skill/SKILL.md`.
 - `itops`: `.aiwg/addons/openbao-migrate/agents/roko-launch-operator.md`.
-- NFT release steward: deployed definition present in Itops; `aiwg show agent nft-release-steward` did not resolve during the audit. Canonical source remains unverified.
+- NFT release steward deployment input: untracked generated file at the audited
+  Itops checkout (`667f0dacb89a6f7d3c3838002e962d875ec16459`), SHA-256
+  `49d3007b2e029a0c37cf86eb482b6fc568b4a0879f119f8d6616aef91b13333d`.
+  `aiwg show agent nft-release-steward` did not resolve and no authoritative
+  upstream source was found. Its short gate vocabulary informed the audit; it
+  was not copied as the distributable definition.
+- NFT evidence reference: `roko-generative-nft-series` commit
+  `62b65eebee4be11e3126c4bb7069957051e7d72c` introduced the production
+  verification matrix and regression cases. The private repository remains
+  unlicensed. This framework therefore uses newly authored, provider-neutral
+  skills and a different `aiwg.web3/*` evidence contract; it does not copy the
+  Roko schemas, implementation, branding, addresses, or fixtures.
+
+## NFT release port provenance and rights
+
+The canonical generalized source is this repository under
+`.aiwg/plugins/web3-distribution/payload/`. It is currently `UNLICENSED`, so the
+owner retains all rights and public redistribution is not granted. This records
+the rights state without treating W3-012 as complete. Public release remains
+blocked until the owner selects a license and completes the rights review.
 
 See references.md for AIWG authoring and technical documentation. The issue backlog specifies remediation and acceptance tests.

@@ -1,0 +1,18 @@
+{
+  "apiVersion": "aiwg.web3/nft-release-ledger/v1",
+  "releaseId": "replace-me",
+  "candidateRevision": 1,
+  "environment": "staging",
+  "generatedAt": "1970-01-01T00:00:00Z",
+  "productionReady": false,
+  "sources": [],
+  "allocations": [],
+  "authorities": [],
+  "observations": {
+    "chain": [],
+    "publication": []
+  },
+  "gates": [],
+  "requiredActions": []
+}
+

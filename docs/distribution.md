@@ -10,6 +10,12 @@ Release gates tracked in the roadmap: owner license and provenance approval; pay
 
 Maintain the same Git commit on origin (Gitea) and github (GitHub). Mirror identity is not publisher trust. No automated push mirror, catalog submission, signing key, release tag or marketplace endorsement is implied by this scaffold.
 
+The NFT release module adds one agent, six skills, templates, and a Python
+standard-library validator. Consumer smoke tests must assert that all seven
+skills and both agents deploy, then run the validator against the independent
+fixture. Installation alone does not authorize live actions described by the
+skills.
+
 ## Verified development scaffold
 
 AIWG 2026.9.12 installed commit `a2a7eb838cb1f2e75c4009acf0ba6a4c2abc2503` from GitHub into a disposable Claude consumer and from Gitea into a disposable Codex consumer. Both deployed the coordinator and intake skill and passed offline marketplace verification with integrity-only status. See install-verification.json and packaging-verification.json.

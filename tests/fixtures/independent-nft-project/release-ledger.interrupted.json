@@ -1,0 +1,93 @@
+{
+  "apiVersion": "aiwg.web3/nft-release-ledger/v1",
+  "releaseId": "independent-community-art-release",
+  "candidateRevision": 3,
+  "environment": "staging",
+  "generatedAt": "2026-09-16T12:02:00Z",
+  "productionReady": false,
+  "sources": [
+    {
+      "label": "allocation",
+      "uri": "git+https://example.invalid/community/art@abc123#allocation.json",
+      "sha256": "165f0f8e557c430929784035df7eeacf7a3ff795f10d76c8707409bba31cb617",
+      "evidenceClass": "frozen-source"
+    }
+  ],
+  "allocations": [
+    {
+      "identity": "edition:1",
+      "recipient": "0x0000000000000000000000000000000000000001",
+      "quantity": 1
+    },
+    {
+      "identity": "edition:2",
+      "recipient": "0x0000000000000000000000000000000000000002",
+      "quantity": 1
+    }
+  ],
+  "authorities": [
+    {
+      "action": "deploy",
+      "target": "community-art-contract",
+      "chainId": 31337,
+      "actor": "staging-release-signer",
+      "costCeiling": "0.1 ETH",
+      "authorizedBy": "fixture-session:deploy",
+      "scope": "live"
+    },
+    {
+      "action": "mint",
+      "target": "community-art-contract",
+      "chainId": 31337,
+      "actor": "staging-release-signer",
+      "costCeiling": "0.1 ETH",
+      "authorizedBy": "fixture-session:mint",
+      "scope": "live"
+    }
+  ],
+  "observations": {
+    "chain": [
+      {
+        "operator": "chain-observer-a",
+        "backend": "chain-backend-a",
+        "observedAt": "2026-09-16T12:00:00Z",
+        "result": "pass"
+      },
+      {
+        "operator": "chain-observer-b",
+        "backend": "chain-backend-b",
+        "observedAt": "2026-09-16T12:01:00Z",
+        "result": "pass"
+      }
+    ],
+    "publication": [
+      {
+        "operator": "storage-operator-a",
+        "backend": "storage-backend-a",
+        "observedAt": "2026-09-16T12:00:00Z",
+        "result": "pass"
+      },
+      {
+        "operator": "storage-operator-b",
+        "backend": "storage-backend-b",
+        "observedAt": "2026-09-16T12:01:00Z",
+        "result": "pass"
+      }
+    ]
+  },
+  "gates": [
+    { "id": "snapshot-reconciliation", "status": "passed", "evidence": ["evidence/snapshot.json"], "actions": [] },
+    { "id": "allocation-uniqueness", "status": "passed", "evidence": ["evidence/allocation.json"], "actions": [] },
+    { "id": "content-integrity", "status": "passed", "evidence": ["evidence/content.json"], "actions": [] },
+    { "id": "independent-publication", "status": "passed", "evidence": ["evidence/publication.json"], "actions": [] },
+    { "id": "deployed-contract-state", "status": "passed", "evidence": ["evidence/deployment.json"], "actions": [] },
+    { "id": "mint-ownership-reconciliation", "status": "blocked", "evidence": [], "actions": ["reconcile interrupted mint"] },
+    { "id": "public-release-receipt", "status": "unverified", "evidence": [], "actions": ["publish final release receipt"] },
+    { "id": "public-metadata-privacy", "status": "passed", "evidence": ["evidence/privacy.json"], "actions": [] }
+  ],
+  "requiredActions": [
+    "reconcile interrupted mint",
+    "publish final release receipt"
+  ]
+}
+

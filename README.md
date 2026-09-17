@@ -2,7 +2,11 @@
 
 An independently versioned, opt-in AIWG framework for the Web3 application and operations lifecycle.
 
-**Status: development scaffold.** The lifecycle, intake skill, package wrapper and implementation backlog exist. Generalized specialist agents and operational adapters are not yet released. Packaging success does not establish production readiness.
+**Status: development framework.** The lifecycle, intake skill, NFT release
+steward and release skills, package wrapper, tests, and implementation backlog
+exist. Chain/provider execution adapters and the other generalized specialist
+modules remain tracked work. Packaging success does not establish production
+readiness.
 
 Canonical engineering tracker: https://git.integrolabs.net/roctinam/aiwg-web3/issues
 Distribution repository (currently private): https://github.com/jmagly/aiwg-web3
@@ -23,6 +27,7 @@ For Codex, substitute `--provider codex`. The Gitea remote is `https://git.integ
 
 ```bash
 python3 scripts/validate.py
+python3 tests/test_nft_release.py
 aiwg package-plugin web3-distribution --dry-run
 aiwg package-plugin web3-distribution --provider all --output dist/plugins
 ```
@@ -30,6 +35,11 @@ aiwg package-plugin web3-distribution --provider all --output dist/plugins
 Canonical framework content lives in `.aiwg/plugins/web3-distribution/payload/`. The wrapper owns delivery; its payload is `type: framework`. There is one content source, with no fork of AIWG core or copied provider deployment trees.
 
 See [design](docs/design.md), [roadmap](docs/roadmap.md), [source audit](docs/source-audit.md), [distribution](docs/distribution.md), and [references](docs/references.md).
+
+The NFT release module begins with `nft-release-plan`, then routes through
+content, publication, deploy/mint, reconciliation, and verification. Its
+validator checks the normalized evidence contract; it does not access wallets,
+RPCs, storage credentials, or production services.
 
 ## License
 

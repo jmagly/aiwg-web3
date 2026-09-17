@@ -1,0 +1,18 @@
+{
+  "apiVersion": "aiwg.web3/nft-reconciliation/v1",
+  "releaseId": "replace-me",
+  "mode": "partial",
+  "chainId": 0,
+  "contract": "replace-me",
+  "allocationSha256": "replace-with-64-lowercase-hex",
+  "observationBlock": {
+    "number": 0,
+    "hash": "replace-me",
+    "finalityRule": "replace-me"
+  },
+  "confirmed": [],
+  "pending": [],
+  "failed": [],
+  "unexpected": [],
+  "ambiguous": []
+}

@@ -14,12 +14,24 @@ for provider in ("claude", "codex"):
     assert provider in w["platforms"] and provider in p["platforms"]
 for phase in ("scope", "design", "build", "verify", "release", "operate"):
     assert (payload / "flows" / (phase + ".md")).is_file()
-assert list((payload / "agents").glob("*.md"))
-assert list((payload / "skills").glob("*/SKILL.md"))
+agents = {path.stem for path in (payload / "agents").glob("*.md")}
+skills = {path.parent.name for path in (payload / "skills").glob("*/SKILL.md")}
+assert {"web3-lifecycle-coordinator", "nft-release-steward"} <= agents
+assert {
+    "web3-intake",
+    "nft-release-plan",
+    "nft-content-prepare",
+    "nft-publication-pin",
+    "nft-deploy-mint",
+    "nft-release-reconcile",
+    "nft-release-verify",
+} <= skills
+validator = payload / "skills/nft-release-verify/scripts/release_ledger.py"
+assert validator.is_file(), "NFT release validator missing"
 for f in payload.rglob("*"):
     assert not f.is_symlink(), f"symlink: {f}"
     if f.suffix == ".md":
         text = f.read_text()
         for forbidden in ("/home/manitcor", "roko.network", "pwROKO", "roko-frontend-lead"):
             assert forbidden not in text, f"project coupling: {f}: {forbidden}"
-print("PASS: payload containment, identity, versions, providers, phases and project-coupling checks")
+print("PASS: payload containment, identity, versions, providers, lifecycle artifacts, and project-coupling checks")
