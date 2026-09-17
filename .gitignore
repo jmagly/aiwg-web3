@@ -7,3 +7,5 @@ dist/
 .aiwg/traces/
 .aiwg/quickref*
 node_modules/
+__pycache__/
+*.py[cod]
