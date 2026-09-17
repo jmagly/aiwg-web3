@@ -1,0 +1,25 @@
+{
+  "aiwg_version": "2026.9.12",
+  "results": [
+    {
+      "provider": "claude",
+      "remote": "github",
+      "commit": "a2a7eb838cb1f2e75c4009acf0ba6a4c2abc2503",
+      "install_exit": 0,
+      "deployed_agent": ".claude/agents/web3-lifecycle-coordinator.md",
+      "deployed_skill": ".claude/.aiwg/skills/web3-intake/SKILL.md",
+      "offline_verify_exit": 0,
+      "trust": "integrity-only"
+    },
+    {
+      "provider": "codex",
+      "remote": "gitea",
+      "commit": "a2a7eb838cb1f2e75c4009acf0ba6a4c2abc2503",
+      "install_exit": 0,
+      "deployed_agent": ".codex/agents/web3-lifecycle-coordinator.toml",
+      "deployed_skill": ".agents/skills/web3-intake/SKILL.md",
+      "offline_verify_exit": 0,
+      "trust": "integrity-only"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ An independently versioned, opt-in AIWG framework for the Web3 application and o
 **Status: development scaffold.** The lifecycle, intake skill, package wrapper and implementation backlog exist. Generalized specialist agents and operational adapters are not yet released. Packaging success does not establish production readiness.
 
 Canonical engineering tracker: https://git.integrolabs.net/roctinam/aiwg-web3/issues
-Public distribution repository: https://github.com/jmagly/aiwg-web3
+Distribution repository (currently private): https://github.com/jmagly/aiwg-web3
 
 ## Use on demand
 

@@ -3,13 +3,13 @@
   "results": [
     {
       "archive": "web3-distribution-2026.9.16-claude.tar.gz",
-      "sha256": "5be48779138611c362915c2ca4e18308d9f33bb48c5e4081a0ea9c6a5ff454e9",
+      "sha256": "ef7189dd2dc16f57b1b139ba2cc808e9ff369b6eec4a89801777accfed74af0c",
       "reproducible": true,
       "payload_bytes_match": true
     },
     {
       "archive": "web3-distribution-2026.9.16-codex.tar.gz",
-      "sha256": "dcb585d6f18e29003b691e0c606ac22b557e603b4d4b729907f57400b7e6c888",
+      "sha256": "1e61dd6293ac180018ae11f4fc15b033f9b0bb140f5b61cc05574bd8264f182a",
       "reproducible": true,
       "payload_bytes_match": true
     }
